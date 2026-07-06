@@ -3,7 +3,7 @@ const menuList = document.getElementById("menu-list");
 const navLinks = document.querySelector(".nav-links");
 const navItems = document.querySelectorAll(".nav-links a");
 
-const images = ["./assets/xpback.jpg", "./assets/dolpin.jpg"];
+const images = ["./assets/xpback.webp", "./assets/dolpin.webp"];
 const heroSection = document.querySelector(".hero-section");
 let currentIndex = 0;
 let isTransitioning = false;

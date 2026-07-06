@@ -153,8 +153,8 @@ header {
   overflow: hidden;
   padding-top: 600px;
   padding-bottom: auto;
-  --hero-bg-base: url("./assets/xpback.jpg");
-  --hero-bg-next: url("./assets/xpback.jpg");
+  --hero-bg-base: url("./assets/xpback.webp");
+  --hero-bg-next: url("./assets/xpback.webp");
   --hero-next-opacity: 0;
   font-size: 1.6rem;
   color: white;
