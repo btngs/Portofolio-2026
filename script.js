@@ -15,14 +15,19 @@ setInterval(() => {
     const nextIndex = (currentIndex + 1) % images.length;
 
     heroSection.style.setProperty("--hero-bg-next", `url("${images[nextIndex]}")`);
-    heroSection.classList.add("is-transitioning");
+    requestAnimationFrame(() => {
+        heroSection.classList.add("is-transitioning");
 
-    setTimeout(() => {
-        heroSection.style.setProperty("--hero-bg-base", `url("${images[nextIndex]}")`);
-        heroSection.classList.remove("is-transitioning");
-        currentIndex = nextIndex;
-        isTransitioning = false;
-    }, 1000);
+        setTimeout(() => {
+            heroSection.style.setProperty("--hero-bg-base", `url("${images[nextIndex]}")`);
+
+            requestAnimationFrame(() => {
+                heroSection.classList.remove("is-transitioning");
+                currentIndex = nextIndex;
+                isTransitioning = false;
+            });
+        }, 1000);
+    });
 }, 6000);
 
 hamburgerBtn.addEventListener('click', () => {

@@ -22,6 +22,8 @@
           <ul class="nav-links">
             <li><a href="#hero">Home</a></li>
             <li><a href="#about">About</a></li>
+            <li><a href="#project">Projects</a></li>
+            <li><a href="#skill">Skills</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>  
@@ -61,8 +63,60 @@
           </div>
         </div>
       </section>
-      <section class="project" id="project" style="text-align: center;"> 
-        <h2>More Content Coming Soon!</h2>
+      <section class="project-section" id="project"> 
+        <div class="container project-container">
+          <h2 class="project-title">Selected Projects</h2>
+          <ul class="project-grid">
+            <li>
+              <article class="project-card">
+                <h3>Smart Inventory Based on LKS-2026</h3>
+                <p>
+                  C# .NET Framework based Winform app for managing
+                  warehouse inventory
+                </p>
+                <button class="btn btn-link">View in github</button>
+              </article>
+            </li>
+  
+            <li>
+              <article class="project-card">
+                <h3>Hospital Management System Based on LKS-2024</h3>
+                <p>
+                  C# .NET Framework based Winform app.
+                  Designed to make meeting management work in hospitals easier
+                </p>
+                <button class="btn btn-link">View in github</button>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="skill-section" id="skill">
+        <div class="container skill-container">
+          <h2 class="skill-title">Skills</h2>
+          <ul class="skill-grid">
+            <li class="skill-card">
+              <i class="bx bx-layout skill-icon"></i>
+              <h3>Frontend</h3>
+              <p>HTML, CSS, JavaScript</p>
+            </li>
+            <li class="skill-card">
+              <i class="bx bx-code-curly skill-icon"></i>
+              <h3>Backend</h3>
+              <p>C#, .NET Framework, PHP, Laravel</p>
+            </li>
+            <li class="skill-card">
+              <i class="bx bx-data skill-icon"></i>
+              <h3>Database</h3>
+              <p>MySQL, SQL Server</p>
+            </li>
+            <li class="skill-card">
+              <i class="bx bx-wrench skill-icon"></i>
+              <h3>Tools</h3>
+              <p>Git, GitHub, VS Code, Postman, Android Studio</p>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
     <footer id="contact" class="footer">
@@ -109,6 +163,6 @@
         </div>
       </div>
     </footer>
-    <script src="script.js" defer></script>
+    <script src="script.js"></script>
   </body>
 </html>
